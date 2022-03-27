@@ -1,0 +1,102 @@
+#include <iostream>
+const int cookie {90};
+const int horse {8};
+long int lol {32};
+
+int main() {
+short int v1 {90};
+short int v2 {80};
+char v3 {9};
+char v4 {10};
+  std::cout<<"Basic functions.";
+  std::cout<<"\n----------------";
+  std::cout<<"\nShort Int";
+  std::cout<<"\nSize of short v1: "<<sizeof(v1);
+  std::cout<<"\nSize of short v2: "<<sizeof(v2);
+  std::cout<<"\n-----------------";
+  std::cout<<"\nAuto values for char";
+  auto t1 = v1 + v2;
+  auto t2 = v3 + v4;
+  std::cout<<"\nTotal of t2: "<<sizeof(t1);
+  std::cout<<"\nTotal of t3: "<<sizeof(t2);
+  std::cout<<"\n-----------------------";
+  std::cout<<"\nBool value with if statement";
+  bool red {true};
+  bool gray {true};
+  bool green {false};
+  bool blue {false};
+  int d {1};
+  int e {2};
+  bool total = (d<e);
+  std::cout<<std::boolalpha;
+  if(red == true){
+    std::cout<<"\nTrue "<<red<<" then the result of the true is: "<<total;
+  }
+  if(red == false){
+    std::cout<<"\nOnly the result: "<<total;
+  }if(d>e){
+    std::cout<<"\nFalse";
+  }if(d != e){
+    std::cout<<"\nNew false";
+  }
+  else{
+    std::cout<<"\nPrint the green bool value"<<green<<" and "<<sizeof(green);
+  }
+  std::cout<<"\n----------------------";
+  std::cout<<"\nElse if statements";
+  int h {67};
+  int s {9};
+  auto result = s * h;
+  bool c {true};
+  bool m {false};
+  bool yo = (c=m);
+  if(m == false){
+    std::cout<<"\nGG:"<<m;
+  }else if(m == true){
+    std::cout<<"\nGG1: "<<m;
+  }else if(h < s){
+    std::cout<<"\nNo compiler";
+  }else if (h >s){
+    std::cout<<"\nTrue compiler:"<<result<<" and the bool value: "<<yo;
+  }
+  std::cout<<"\n----------------------";
+  std::cout<<"\nCase Statement";
+  long double ddd = lol + horse;
+  int ko {88};
+    switch(ko){
+      case(88):{
+        std::cout<<"\nNothing: "<<ddd;
+        break;
+      }
+      case(42):{
+        std::cout<<"\nTotally Not here";
+        break;
+      }
+      case(90):{
+        std::cout<<"\nCCCCCCCC";
+        break;
+      }default:{
+        std::cout<<"\nLOLOLOL";
+        break;
+      }
+      std::cout<<"\nMOVE";
+    }
+  std::cout<<"\n-------------------------";
+  std::cout<<"\nTernary Expression";
+    double high {};
+    if(horse == 8){
+      high = horse;
+      std::cout<<"\nHigh is: "<<horse;
+    }else{
+      std::cout<<"\nNothing is: "<<lol;
+    }
+    high = (horse >= lol)? horse:555.562f;
+  std::cout<<"\nTotal of the real high: "<<high;
+  std::cout<<"\n--------------------";
+  std::cout<<"\nLoops";
+  int u;
+    for(int u{}; u < 10; ++u){
+      std::cout<<"\nTrollolololololol";
+    }
+  return 0;
+}
